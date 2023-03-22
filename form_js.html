@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <form>
+      <label class="details" for="name">Name</label>
+      <input type="text" id="name" name="name"><br>
+      <label class="details" for="dob">DOB</label>
+      <input type="date" id="dob" name="dob"><br>
+      <label class="details" for="gender">Gender
+        <label class="details">
+          <input type="radio" name="gender" id="male" value="male">
+          Male
+        </label>
+        <label class="details">
+          <input type="radio" name="gender" id="female" value="female">
+          Female
+        </label>
+      </label><br>
+      <label>Favorite Food:</label>
+      <div class="favfood">
+        <input type="checkbox" name="food" id="pizza" value="pizza">Pizza
+        <input type="checkbox" name="food" id="hamburger" value="hamburger">Hamburger
+      </div>
+      <br>
+      <label class="details" id=content for="textarea">Anything else
+        <textarea name="textarea" id="textarea"></textarea>
+      </label>
+      <br>
+      <button type="button" id="btn" onclick="submitform()">Submit</button>
+      <table id="inputTable">
+        <tr>
+          <th>Name</th>
+          <th>DOB</th>
+          <th>Gender</th>
+          <th>Favorite Food</th>
+          <th>Anything else</th>
+          <th>Action</th>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <script src="form.js"></script>
+</body>
+
+</html>
